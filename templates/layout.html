@@ -16,6 +16,13 @@
 	</script>
 	<link type="text/css" href="{{ url_for('static', filename='css/main.css')}}" rel="stylesheet" />
 	<title>{{title}}</title>
+	<script>
+	$(document).ready(function(){
+		$("#deploy").click(function(){
+			$(".upper").slideToggle("slow");
+		});
+});
+</script>
 </head>
 <body>
 <div class="content">

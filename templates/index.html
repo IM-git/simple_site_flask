@@ -2,6 +2,7 @@
 {% block content %}
 
 <div class="parents">
+    <p><input class="btn btn-secondary btn-lg" id="deploy" type="submit" value="Deploy"><br>
     <div class="upper">
         {% for text in list %}
         <p>{{ text.text }}</p>
@@ -10,7 +11,7 @@
     <div class="bottom">
         <form action="" method="post" class="form-contact">
         <textarea name='text' rows="10" placeholder="Enter text"></textarea>
-        <p><input class="btn btn-secondary btn-lg" type="submit" value="Add text" />
+        <p><input class="btn btn-secondary btn-lg" id="button_2" type="submit" value="Add text" />
     </div>
 </div>
 {% endblock %}

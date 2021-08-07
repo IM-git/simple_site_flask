@@ -7,17 +7,25 @@ body {
 }
 
 div .upper {
-    margin:0 25% 2% 25%;
+    margin:0 25% 3% 25%;
     width:50.5%;
     background: #C1C1C1;
     border-radius: 10px;
 }
 
 
+#deploy {
+    margin:0 25% 2% 25%;
+}
+
 p {
-    margin:2% 1% 0 1%;
+    margin:0 1% 0 1%;
     width:98%;
     text-align: center;
+}
+
+#button_2 {
+    margin:2% 25% 2% 25%;
 }
 
 textarea {
