@@ -1,18 +1,16 @@
-<<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <p>First path</p>
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="parents">
+    <div class="upper">
+        {% for text in list %}
+        <p>{{ text.text }}</p>
+        {% endfor %}
     </div>
-    <div>
-        <p>Second path</p>
+    <div class="bottom">
+        <form action="" method="post" class="form-contact">
+        <textarea name="text" rows="10" placeholder="Enter text"></textarea>
+        <p><input type="submit" value="Add text" />
     </div>
-</body>
-</html>
+</div>
+{% endblock %}
